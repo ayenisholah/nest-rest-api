@@ -1,4 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
+
 export default {
-  mongoURI:
-    'mongodb+srv://nest-rest-api:eFEuX4Vd1HoDSgo8@cluster0.u3c7g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  mongoURI: process.env.MONGO_URI,
 };
